@@ -20,12 +20,12 @@ impl Triangle {
         self.a == self.b && self.b == self.c && self.c == self.a
     }
 
-    pub fn is_scalene(&self) -> bool {  //triangle has at least two sides the same length.
+    pub fn is_scalene(&self) -> bool {  //triangle has all sides of different lengths.
         
         self.a != self.b && self.b != self.c && self.c != self.a
     }
 
-    pub fn is_isosceles(&self) -> bool {    //triangle has all sides of different lengths.
+    pub fn is_isosceles(&self) -> bool {    //triangle has at least two sides the same length.
         
         self.a == self.b || self.b == self.c || self.c == self.a
     }

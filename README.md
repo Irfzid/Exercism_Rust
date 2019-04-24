@@ -31,7 +31,7 @@ impl Triangle {
         }    
     }
 ```
-Fungsi pada `build` adalah untuk mengecek apakah data yang diberikan memenuhi syarat sebagai segitiga. `sides[0]` digunakan untuk mengambil value dari index ke 0 pada `sides`.
+Fungsi pada `build` adalah untuk mengecek apakah data yang diberikan memenuhi syarat sebagai segitiga. `sides[0]` digunakan untuk mengambil value dari index ke 0 pada `sides`. Karena `build` menggunakan `Option` type, maka return-nya harus `Some`, yang mengandung value, atau `None`, yang tidak ada value (https://doc.rust-lang.org/std/option/index.html).
 
 ## Equilateral
 ```rust
